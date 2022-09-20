@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-nav a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.filter-product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#range{
+  cursor: pointer;
+  /* height: 3px; */
+}
+
+.span-intial-range{
+  font-size: 1rem;
+  margin-left: 1rem;
+  border: 1px solid;
+  padding: 0.5rem;
+  /* position: absolute; */
+
+}
+
+.main-range{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  padding: 1rem;
+  border: 1px solid aliceblue;
+  background-color: aliceblue;
+
+}
+
+.filter-range{
+  font-size: 1rem;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+
+.filter-icon{
+  cursor: pointer;
+  width: 20%;
+}
+
+
+.main-products{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.main-products a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-products a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-body{
+  height: 200px;
+  overflow: auto;
+}
+
+.card-body::-webkit-scrollbar {
+  display: none;
+}
+
+.item-length{
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+  margin-top: -0.3rem;
+}
+.main-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+}
+
+.button-div{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-div button{
+  padding: 0.2rem 0.4rem;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 20px;
+}
+
+
+.button-div p{
+margin:0.5rem 0rem;
+width: 30px;
+}
+
+.main-items p{
+  width: 33.33%;
+  text-align: center;
+}
+
+.removebtn{
+  width: 33.33%;
+}
+
+.removebtn button{
+  margin: auto;
+  display: block;
+}
+
+.main-items-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.main-items-heading p{
+  width: 33.33%;
+  text-align: center;
+  margin: 0;
+}
+
+.image-div{
+  width: 33.33%;
+}
+
+.main-items img{
+  width: 100px;
+  margin: auto;
+  display: block;
+}
+
+.total-item{
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  position: sticky !important;
+  top: 56px !important;
+}
+
+.music-icon{
+  font-size: 2rem;
+}
+
+/* .music-icon-rotate{
+  font-size: 2rem;
+  animation: rotate 1s infinite linear;
+  color: white;
+} */
+
+.music-div{
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* .music-div-rotate{
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+  border: white;
+} */
+
+
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+
+
+.button-heart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.button-heart svg{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-img-div{
+  height: 300px;
+}
+.main-img-div img{
+  width: 200px;
+  margin: auto;
+  display: block;
+  padding: 1rem;
+}
+
+.favourite-heart{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.favourite-item p{
+  margin-bottom: 0;
+}
+
+.errorDiv{
+  height: 100vh;
+  border: 1px solid;
+}
+
+.errorDiv a{
+  text-decoration: none;
+}
+
+.Nodata{
+  height: 90vh;
+}
+
+.Nodata svg{
+  font-size: 6rem;
+}
+.Nodata p{
+  position: absolute;
+  top: 59%;
+}
+
+.single-main-div{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: 2rem auto;
+}
+.single-image-div div img{
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.single-image-div  img{
+  border: 1px solid;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  min-height: 300px;
+  object-fit: contain;
+}
+
+
+.single-image-div{
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  margin-right:1rem;
+  /* position: sticky;
+  top: 70px;
+  height: 272px; */
+}
+
+.rating-div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.rating-div div{
+ margin-right: 1rem;
+}
+
+.single-button-div button:first-of-type{
+  margin-right: 1rem;
+}
+
+.single-button-div{
+  display: flex;
+  margin: 2rem 0rem;
+}
+
+.single-content-div{
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
