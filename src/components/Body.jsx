@@ -25,8 +25,10 @@ const Body = () => {
 
   useEffect(() => {
     // dispatch(getProducts());
-    dispatch(getProducts(Products));
-  }, [dispatch]);
+    if(productData.length === 0){
+      dispatch(getProducts(Products));
+    }
+  }, []);
 
   if (condition === conditionType.loading) {
     return "Loading";

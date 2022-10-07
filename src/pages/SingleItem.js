@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { singleItem } from "../redux/slicefunc/Product";
 import { Button, Container } from "react-bootstrap";
-// import ReactImageMagnify from "react-image-magnify";
 import StarRatings from "react-star-ratings";
 
 const SingleItem = () => {
@@ -20,20 +19,7 @@ const SingleItem = () => {
     }
   });
 
-  const { title, price, description, category, image, rating } = singleData;
-
-  const imageProps = {
-    smallImage: {
-      alt: "Phasellus laoreet",
-      isFluidWidth: true,
-      src: image,
-    },
-    largeImage: {
-      src: image,
-      width: 1100,
-      height: 1500,
-    },
-  };
+  const { title, price, description, category, image } = singleData;
 
   const changeRating = (data) => {
     setStar(data);
@@ -45,7 +31,6 @@ const SingleItem = () => {
       <Container>
         <div className="single-main-div">
           <div className="single-image-div">
-            {/* <ReactImageMagnify {...imageProps} /> */}
             <img src={image} />
             <div className="single-button-div">
               <Button>Add to Favourite</Button>
